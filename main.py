@@ -46,8 +46,8 @@ def main():
             # No button at all → app is assumed to be awake
             print("No wake-up button found. Assuming app is already awake ✅")    
         except Exception as e:
-        print(f"Unexpected error: {e}")
-        exit(1)
+            print(f"Unexpected error: {e}")
+            exit(1)
     finally:
         driver.quit()
         print("Script finished.")        
